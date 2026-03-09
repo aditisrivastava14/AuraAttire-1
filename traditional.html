@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AuraAttire | Traditional Wear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav" role="navigation" aria-label="Primary">
+        <a class="logo" href="index.html" aria-label="AuraAttire home">
+          <span class="logo-badge" aria-hidden="true"></span>
+          <span class="logo-text-main">
+            <span class="logo-wordmark">AuraAttire</span>
+            <span class="logo-tagline">WOMEN'S EDIT</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="traditional.html">Traditional</a></li>
+          <li><a href="ethnic.html">Ethnic</a></li>
+          <li><a href="latest.html">Latest</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <button class="cart cart-trigger" type="button" aria-label="Open cart">
+            <svg class="cart-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 7h14l-2 8H8L7 7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+              <path d="M7 7 6 3H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              <path d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor" />
+              <path d="M18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor" />
+            </svg>
+            <span>Cart</span>
+            <span id="cart-count" class="cart-count" aria-label="Items in cart">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="cart-overlay" aria-hidden="true">
+        <aside class="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+          <header>
+            <div>
+              <h2>Your Cart</h2>
+              <p class="cart-tagline">Review your AuraAttire favourites.</p>
+            </div>
+            <button class="cart-close" type="button" data-close-cart aria-label="Close cart">×</button>
+          </header>
+          <div class="cart-body">
+            <p class="cart-empty">Your cart is empty. Add a few dresses you love.</p>
+            <ul class="cart-items"></ul>
+          </div>
+          <div class="cart-summary">
+            <div class="cart-summary-row">
+              <span>Total</span>
+              <strong class="cart-subtotal-amount">₹0</strong>
+            </div>
+            <div class="cart-actions">
+              <button class="btn btn-outline" type="button" data-clear-cart>Clear</button>
+              <button class="btn btn-primary" type="button" data-checkout>Proceed to Checkout</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <section class="hero">
+        <div
+          class="container hero-surface"
+          style="
+            --hero-image: url('https://images.unsplash.com/photo-1600185365780-0e8a0c2c18b8?auto=format&fit=crop&w=1600&q=80');
+          "
+        >
+          <div class="hero-inner" style="min-height: 300px">
+            <div class="hero-copy">
+              <h1>Traditional Wear</h1>
+              <p>Timeless sarees with rich weaves, subtle shimmer, and elegant drapes.</p>
+              <div class="hero-cta">
+                <a class="btn btn-primary btn-wide" href="#products">Browse Sarees</a>
+                <a class="btn btn-outline btn-wide" href="contact.html">Need Help Choosing?</a>
+              </div>
+            </div>
+            <div class="hero-aside" aria-hidden="true">
+              <div class="hero-chip">
+                <div class="badge"><span class="dot"></span> Heritage weaves • Modern styling</div>
+                <div class="line"><span><strong>Best for:</strong> Weddings</span><span>✨</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="container">
+          <div class="page-title">
+            <div>
+              <h1>Traditional Collection</h1>
+              <div class="crumb"><a href="index.html">Home</a> / Traditional</div>
+            </div>
+            <span class="badge"><span class="dot"></span> 6 curated picks</span>
+          </div>
+
+          <div class="grid products" style="margin-top: 14px">
+            <article class="card product-card" data-name="Kanjeevaram Saree" data-price="₹9,999">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1593032465170-3a6f5c0f6f09?auto=format&fit=crop&w=1200&q=80"
+                  alt="Kanjeevaram saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Kanjeevaram Saree</h3>
+                <p class="price">Price <span>₹9,999</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card" data-name="Banarasi Silk Saree" data-price="₹11,499">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80"
+                  alt="Banarasi silk saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Banarasi Silk Saree</h3>
+                <p class="price">Price <span>₹11,499</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card" data-name="Cotton Saree" data-price="₹2,499">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80"
+                  alt="Cotton saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Cotton Saree</h3>
+                <p class="price">Price <span>₹2,499</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card" data-name="Half Saree" data-price="₹4,199">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1520975939237-9a0b9f3dd5e0?auto=format&fit=crop&w=1200&q=80"
+                  alt="Half saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Half Saree</h3>
+                <p class="price">Price <span>₹4,199</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card" data-name="Mysore Silk Saree" data-price="₹7,799">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1520975867597-0e8a0c2c18b8?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mysore silk saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Mysore Silk Saree</h3>
+                <p class="price">Price <span>₹7,799</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card product-card" data-name="Bridal Saree" data-price="₹14,999">
+              <div class="thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+                  alt="Bridal saree"
+                  loading="lazy"
+                />
+              </div>
+              <div class="content">
+                <h3>Bridal Saree</h3>
+                <p class="price">Price <span>₹14,999</span></p>
+                <div class="actions">
+                  <button class="btn btn-outline view-details" type="button">View Details</button>
+                  <button class="btn btn-primary add-to-cart" type="button">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <h3>About AuraAttire</h3>
+              <p>Heritage-inspired pieces curated with soft glam, premium finishes, and versatile styling.</p>
+            </div>
+            <div>
+              <h3>Contact</h3>
+              <p>
+                Email:
+                <a href="mailto:hello@auraattire.com" style="color: var(--primary); font-weight: 800">hello@auraattire.com</a>
+              </p>
+              <p style="margin-top: 8px; color: rgba(51, 51, 51, 0.72)">Phone: +91 98765 43210</p>
+            </div>
+            <div>
+              <h3>Follow Us</h3>
+              <div class="social" aria-label="Social links">
+                <a href="#" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                    <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v3H7v3h3v6h3v-6h3l1-3h-4v-3c0-.6.4-1 1-1Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <a href="#" aria-label="Pinterest">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 3a9 9 0 0 0-3 17.5c-.1-.8-.1-2 .1-2.9l1.3-5.4S10.1 11 10.1 10c0-1.4.8-2.4 1.8-2.4.8 0 1.2.6 1.2 1.4 0 .9-.5 2.2-.8 3.4-.2 1 .4 1.8 1.4 1.8 1.7 0 3-1.8 3-4.3 0-2.2-1.6-3.8-4-3.8-2.7 0-4.3 2-4.3 4.1 0 .8.3 1.7.7 2.2.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.3.1-1-.5-1.6-2-1.6-3.2 0-2.6 1.9-5 5.5-5 2.9 0 5.1 2.1 5.1 4.8 0 2.9-1.8 5.2-4.3 5.2-.8 0-1.6-.4-1.8-.9l-.5 2c-.2.8-.6 1.8-.9 2.4A9 9 0 1 0 12 3Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footnote">
+            <span>© <span id="year">2026</span> AuraAttire. All rights reserved.</span>
+            <span style="font-weight: 750">Traditional • Silk • Bridal</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
