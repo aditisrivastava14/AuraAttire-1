@@ -443,7 +443,7 @@ body.nav-open .burger span:nth-child(3){top:6px; transform:rotate(-45deg)}
 }
 
 .category-card .thumb{
-  height:210px;
+  height:420px;
   position:relative;
   overflow:hidden;
 }
@@ -454,6 +454,7 @@ body.nav-open .burger span:nth-child(3){top:6px; transform:rotate(-45deg)}
   transform:scale(1.03);
   transition:transform .35s ease;
   filter:saturate(1.05);
+  object-position:top;
 }
 .category-card::after{
   content:"";
@@ -491,15 +492,15 @@ body.nav-open .burger span:nth-child(3){top:6px; transform:rotate(-45deg)}
 .category-card:hover .arrow{transform:translateX(2px); background:rgba(233,30,99,.14)}
 
 .product-card .thumb{
-  height:210px;
+  height:auto;
   overflow:hidden;
   position:relative;
   background:rgba(252,228,236,.55);
 }
 .product-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+ width:100%;
+  height:auto;
+  object-fit:contain;
   transition:transform .35s ease;
 }
 .product-card:hover img{transform:scale(1.08)}
